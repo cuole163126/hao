@@ -8,7 +8,7 @@ import re
 import sys
 
 def egobetsport():
-    browser.get('http://www.egobet88.com/en/sport-early-bets.html')
+    browser.get('')
     browser.maximize_window()
     time.sleep(10)
     browser.find_element_by_id("league").click()
