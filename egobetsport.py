@@ -25,17 +25,16 @@ def egobetsport():
     for jj in a1:
         browser.find_element_by_id("nolive_page").click()
         ss="//option[contains(text(),'"+str(ii)+"')]"
-        print(ss)
         ii=ii+1
         browser.find_element_by_xpath(ss).click()
         time.sleep(6)
         a2=browser.find_element_by_xpath("//td[@style='padding-left:3px; width:544px;']")
         kk=a2.get_attribute("outerHTML")+kk
         time.sleep(6)
-    file1=open('egobetsport1.html','w')
+    file1=open('egobetsport.html','w')
     file1.write(kk)
     file1.close()
-    os.popen('cp egobetsport1.html egobetsport.html')
+    #os.popen('cp egobetsport1.html egobetsport.html')
     time.sleep(10)
 
 reload(sys)
